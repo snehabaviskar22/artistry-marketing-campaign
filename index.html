@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artistry — The Art of Handmade. A responsive marketing campaign landing page showcasing original paintings, ceramic pottery, botanical illustrations, and handcrafted home decor.">
+  <title>Artistry &mdash; The Art of Handmade | Campaign Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Campaign Demo Bar linking to the companion HTML Email Template -->
+  <div class="demo-bar" role="region" aria-label="Project demonstration notice">
+    <div class="container demo-bar-inner">
+      <p class="demo-bar-text">
+        <strong>Educational Marketing Campaign Demo:</strong> Arrived from our promotional email or exploring the portfolio?
+      </p>
+      <a href="email-template.html" class="demo-bar-link">Preview Standalone HTML Email Template &rarr;</a>
+    </div>
+  </div>
+
+  <!-- A. HEADER AND NAVIGATION -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="Artistry Home">
+        <img src="assets/logo.svg" alt="Artistry — Handcrafted Studio" width="190" height="48">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#collection" class="nav-link">Collection</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+        </ul>
+      </nav>
+
+      <a href="#collection" class="btn btn-primary header-cta">Explore Art</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- B. HERO SECTION -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Autumn Atelier Collection &bull; Seasonal Campaign</p>
+          <h1 id="hero-heading" class="hero-title">The Art of Handmade</h1>
+          <p class="hero-description">
+            Discover one-of-a-kind paintings, wheel-thrown stoneware ceramics, botanical illustrations, and sculptural home decor crafted in independent artist studios. Every piece brings warmth, texture, and human artistry into your living space.
+          </p>
+          <div class="hero-actions">
+            <a href="#collection" class="btn btn-primary">Explore the Collection</a>
+            <a href="#story" class="btn btn-secondary">Our Story</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img
+            src="assets/images/hero-art.jpg"
+            alt="Sunlit artist studio table arranged with handmade ceramic vases, textured oil paintings in terracotta and burgundy tones, and botanical watercolor studies"
+            width="960"
+            height="720"
+            class="hero-image"
+          >
+          <figcaption class="hero-caption">
+            Curated works from the fictional Autumn Atelier showcase &mdash; handcrafted textures in natural studio light.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- C. FEATURED COLLECTION -->
+    <section class="collection-section" id="collection" aria-labelledby="collection-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Curated Studio Showcase</p>
+          <h2 id="collection-heading" class="section-title">Featured Collection</h2>
+          <p class="section-subtitle">
+            Browse four signature categories from our seasonal campaign. All prices below are sample figures for this frontend marketing demonstration.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product Card 1: Original Painting -->
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="assets/images/painting.jpg"
+                alt="Original impasto acrylic and oil painting on stretched linen canvas with warm ochre, terracotta, and burgundy botanical leaves"
+                width="640"
+                height="480"
+                class="product-image"
+              >
+            </div>
+            <div class="product-body">
+              <span class="product-category">Fine Art Canvas</span>
+              <h3 class="product-title">Original Painting</h3>
+              <p class="product-description">
+                Layered palette-knife acrylic and oil botanical composition on raw stretched linen canvas, rich in warm earth pigments.
+              </p>
+              <div class="product-footer">
+                <p class="product-price" aria-label="Sample price 1850 dollars">
+                  <span class="price-label">Sample Price:</span> ₹1850
+                </p>
+                <a
+                  href="#demo-purchase-notice"
+                  class="product-action"
+                  data-product-name="Original Painting"
+                  data-product-price="₹1850"
+                >
+                  Preview Piece Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2: Handmade Ceramic Pottery -->
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="assets/images/pottery.jpg"
+                alt="Handmade wheel-thrown stoneware ceramic amphora vase with speckled cream glaze beside a raw terracotta artisan bowl"
+                width="640"
+                height="480"
+                class="product-image"
+              >
+            </div>
+            <div class="product-body">
+              <span class="product-category">Studio Ceramics</span>
+              <h3 class="product-title">Handmade Ceramic Pottery</h3>
+              <p class="product-description">
+                Wheel-thrown speckled stoneware amphora and organic terracotta pinch bowl, kiln-fired in small studio batches.
+              </p>
+              <div class="product-footer">
+                <p class="product-price" aria-label="Sample price 9500 rupees ">
+                  <span class="price-label">Sample Price:</span> ₹9500
+                </p>
+                <a
+                  href="#demo-purchase-notice"
+                  class="product-action"
+                  data-product-name="Handmade Ceramic Pottery"
+                  data-product-price="₹9500"
+                >
+                  Preview Piece Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3: Artistic Illustration -->
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="assets/images/illustration.jpg"
+                alt="Hand-painted botanical ink and watercolor illustration print mounted in a warm walnut wood frame"
+                width="640"
+                height="480"
+                class="product-image"
+              >
+            </div>
+            <div class="product-body">
+              <span class="product-category">Works on Paper</span>
+              <h3 class="product-title">Artistic Illustration</h3>
+              <p class="product-description">
+                Delicate botanical study painted with mineral watercolors and archival India ink on cold-pressed cotton paper.
+              </p>
+              <div class="product-footer">
+                <p class="product-price" aria-label="Sample price 75 dollars">
+                  <span class="price-label">Sample Price:</span> ₹7500
+                </p>
+                <a
+                  href="#demo-purchase-notice"
+                  class="product-action"
+                  data-product-name="Artistic Illustration"
+                  data-product-price="₹7500"
+                >
+                  Preview Piece Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 4: Handmade Home Decor -->
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img
+                src="assets/images/handmade-decor.jpg"
+                alt="Hand-carved olive wood sculptural bowl displayed beside a handwoven natural fiber wall tapestry on a warm cream shelf"
+                width="640"
+                height="480"
+                class="product-image"
+              >
+            </div>
+            <div class="product-body">
+              <span class="product-category">Textiles &amp; Woodcraft</span>
+              <h3 class="product-title">Handmade Home Decor</h3>
+              <p class="product-description">
+                Hand-carved olive wood vessel paired with a loom-woven unbleached cotton and wool wall hanging for warm interiors.
+              </p>
+              <div class="product-footer">
+                <p class="product-price" aria-label="Sample price 1200 rupees">
+                  <span class="price-label">Sample Price:</span> ₹1200
+                </p>
+                <a
+                  href="#demo-purchase-notice"
+                  class="product-action"
+                  data-product-name="Handmade Home Decor"
+                  data-product-price="₹1200"
+                >
+                  Preview Piece Details
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Promotional Demo Notice for Product Actions (No Fake Checkout) -->
+        <div
+          id="demo-purchase-notice"
+          class="demo-notice-box"
+          role="region"
+          aria-live="polite"
+          aria-labelledby="demo-notice-heading"
+          tabindex="-1"
+        >
+          <div class="demo-notice-content">
+            <h3 id="demo-notice-heading" class="demo-notice-title">
+              Promotional Campaign Demonstration Notice
+            </h3>
+            <p id="demo-notice-message" class="demo-notice-text">
+              Artistry is an educational frontend marketing project. Online checkout, shopping carts, and payment processing are intentionally omitted. You can test the interactive campaign experience by signing up for our demonstration newsletter below.
+            </p>
+          </div>
+          <a href="#newsletter" class="btn btn-secondary demo-notice-cta">Go to Newsletter Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. BRAND STORY -->
+    <section class="story-section" id="story" aria-labelledby="story-heading">
+      <div class="container story-grid">
+        <div class="story-narrative">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2 id="story-heading" class="section-title">Celebrating Independent Artists &amp; Slow Craftsmanship</h2>
+          <p class="story-paragraph">
+            Artistry was conceived around a simple belief: the objects we live with should tell a story of human creativity. In a world of mass-manufactured goods, handmade art preserves the quiet irregular beauty of the maker&rsquo;s hand.
+          </p>
+          <p class="story-paragraph">
+            Every work featured in our seasonal campaigns highlights traditional techniques&mdash;from natural earth-pigment mixing and slow wheel-throwing to archival botanical illustration and hand-loom weaving.
+          </p>
+        </div>
+
+        <div class="story-pillars" aria-label="Core craftsmanship values">
+          <div class="pillar-card">
+            <h3 class="pillar-title">1. Independent Studio Focus</h3>
+            <p class="pillar-text">
+              Dedicated to showcasing small-batch creations by independent painters, ceramicists, illustrators, and textile makers.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <h3 class="pillar-title">2. Tactile, Honest Materials</h3>
+            <p class="pillar-text">
+              Crafted with raw linen canvas, stoneware clay, mineral watercolors, sustainably harvested wood, and unbleached cotton.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <h3 class="pillar-title">3. Mindful Curation</h3>
+            <p class="pillar-text">
+              Each seasonal collection is thoughtfully arranged to help collectors discover cohesive, timeless pieces for everyday spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. CAMPAIGN PROMOTION -->
+    <section class="campaign-banner-section" id="campaign-promo" aria-labelledby="campaign-promo-heading">
+      <div class="container">
+        <div class="campaign-banner">
+          <div class="campaign-banner-text">
+            <p class="campaign-eyebrow">Seasonal Spotlight &bull; Consistent Email &amp; Web Campaign</p>
+            <h2 id="campaign-promo-heading" class="campaign-title">
+              The Autumn Atelier Collection Is Now Live for Preview
+            </h2>
+            <p class="campaign-description">
+              Designed to mirror our promotional HTML email campaign, this seasonal showcase demonstrates how cohesive typography, warm editorial color palettes, and clear calls to action guide visitors from their inbox to a responsive landing page.
+            </p>
+          </div>
+          <div class="campaign-banner-actions">
+            <a href="#newsletter" class="btn btn-light">Join the Collector Preview</a>
+            <a href="email-template.html" class="campaign-email-link">View Companion Email Template &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. NEWSLETTER SIGNUP -->
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container newsletter-container">
+        <div class="newsletter-intro">
+          <p class="eyebrow">Stay Connected</p>
+          <h2 id="newsletter-heading" class="section-title">Studio Dispatch &amp; Collection Previews</h2>
+          <p class="newsletter-description">
+            Receive fictional seasonal lookbooks, artist studio notes, and new collection announcements. Test our client-side form validation below.
+          </p>
+          <p class="privacy-reassurance">
+            <strong>Privacy Note:</strong> This is a frontend-only educational demonstration. Your name and email are validated in the browser and are <em>never</em> stored in cookies, browser storage, or any external server.
+          </p>
+        </div>
+
+        <form id="newsletter-form" class="newsletter-form" novalidate aria-describedby="newsletter-form-note">
+          <p id="newsletter-form-note" class="form-required-note">
+            Fields marked with <span aria-hidden="true">*</span><span class="sr-only">an asterisk</span> are required.
+          </p>
+
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="subscriber-name" class="form-label">
+              Full Name <span class="required-star" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="subscriber-name"
+              name="subscriberName"
+              class="form-input"
+              placeholder="e.g., Aarav Mehta"
+              required
+              autocomplete="name"
+              aria-describedby="name-error"
+            >
+            <p id="name-error" class="field-error" role="alert" aria-live="polite"></p>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="subscriber-email" class="form-label">
+              Email Address <span class="required-star" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="subscriber-email"
+              name="subscriberEmail"
+              class="form-input"
+              placeholder="e.g., aarav@example.com"
+              required
+              autocomplete="email"
+              aria-describedby="email-error"
+            >
+            <p id="email-error" class="field-error" role="alert" aria-live="polite"></p>
+          </div>
+
+          <!-- Consent Checkbox -->
+          <div class="form-group checkbox-group">
+            <div class="checkbox-row">
+              <input
+                type="checkbox"
+                id="subscriber-consent"
+                name="subscriberConsent"
+                class="form-checkbox"
+                required
+                aria-describedby="consent-error"
+              >
+              <label for="subscriber-consent" class="checkbox-label">
+                I agree to receive sample campaign previews and understand that this form is a frontend-only demonstration that does not save my personal data. <span class="required-star" aria-hidden="true">*</span>
+              </label>
+            </div>
+            <p id="consent-error" class="field-error" role="alert" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">
+            Subscribe to Studio Dispatch
+          </button>
+
+          <!-- Accessible Feedback Area for Validation and Success Messages -->
+          <div
+            id="form-feedback"
+            class="form-feedback"
+            role="status"
+            aria-live="polite"
+            tabindex="-1"
+            hidden
+          ></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- G. FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo-link">
+            <img src="assets/logo.svg" alt="Artistry — Handcrafted Studio" width="175" height="44">
+          </a>
+          <p class="footer-description">
+            Artistry is a fictional online marketplace created to demonstrate HTML5, CSS3, responsive layout design, client-side JavaScript validation, and table-based HTML email development.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="footer-links">
+          <h3 class="footer-heading">Campaign Navigation</h3>
+          <ul class="footer-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Featured Collection</a></li>
+            <li><a href="#story">Our Brand Story</a></li>
+            <li><a href="#newsletter">Newsletter Signup</a></li>
+            <li><a href="email-template.html">Promotional HTML Email</a></li>
+          </ul>
+        </div>
+
+        <!-- Fictional Contact & Demo Policies -->
+        <div class="footer-contact">
+          <h3 class="footer-heading">Sample Contact Details</h3>
+          <p class="footer-contact-item">
+            42 Artisan Lane, Studio 4B, Craftsville, CA 94107 (Fictional Address)
+          </p>
+          <p class="footer-contact-item">
+            Email: <a href="mailto:hello@artistry-demo.example">hello@artistry-demo.example</a>
+          </p>
+          <p class="footer-contact-item">
+            Phone: +1 (555) 019-2834 (Sample Only)
+          </p>
+          <p class="footer-policy-links">
+            <a href="#privacy-demo">Privacy Policy (Demo)</a> &bull;
+            <a href="#unsubscribe-demo">Unsubscribe Info (Demo)</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Demonstration Policy Anchors (Targets for Footer & Email Template Links) -->
+      <div class="footer-demo-notes">
+        <div id="privacy-demo" class="footer-note-card">
+          <strong>Privacy Policy Demonstration Notice:</strong> This project does not collect, store, transmit, or share any personal information. Submitting the newsletter form runs browser-side validation only and discards inputs immediately.
+        </div>
+        <div id="unsubscribe-demo" class="footer-note-card">
+          <strong>Unsubscribe Demonstration Notice:</strong> The unsubscribe link in <code>email-template.html</code> points here to demonstrate email compliance structure (such as CAN-SPAM / GDPR unsubscribe placement) without implying a live mailing list.
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 Artistry &mdash; Email Marketing Campaign Project. Built for educational and interview preparation purposes.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
